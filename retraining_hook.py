@@ -21,7 +21,7 @@ def alert_hook():
         if "alerts" in data:
             # check if the alert name is matched
             if data["groupLabels"].get("alertname") == alertname:
-                subprocess.run(["./push_to_github.sh"])
+                subprocess.run(["C:/Program Files/Git/bin/bash.exe", "./push_to_github.sh"])
                 return "Triggered", 200
             
     return "No action", 200
