@@ -14,7 +14,7 @@ def home():
 
 @app.route('/alert', methods=['POST'])
 def alert_hook():
-    alertname = "HighCPUUsage"
+    alertname = "ModelPredictionBias"
     data = request.json
     if data is not None:
         # Check if the data contains 'alerts' key
